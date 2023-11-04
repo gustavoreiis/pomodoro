@@ -30,6 +30,8 @@ document.getElementById('forms').addEventListener('submit', function() {
         concluded: false
     }
 
+    alert('Tarefa criada.')
+
     nomeInput.value = '';
     descricaoInput.value = '';
     ciclosInput.value = '';
@@ -37,6 +39,4 @@ document.getElementById('forms').addEventListener('submit', function() {
     var vetorTasks = JSON.parse(localStorage.getItem('tasks')) || [];
     vetorTasks.push(dataTask);
     localStorage.setItem("tasks", JSON.stringify(vetorTasks));
-    alert('Tarefa criada.')
-
-})
+});
