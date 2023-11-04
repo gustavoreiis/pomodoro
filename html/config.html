@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/config.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/tomate.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header flex">
+        <div class="logo flex">
+            <img src="../assets/tomate.png" alt="logo" width="45px">
+            <h1>Pomodoro</h1>
+        </div>
+
+        <div class="option">
+            <i class='bx bx-home'></i>
+            <i class='bx bx-list-ul'></i>
+            <i class='bx bx-plus'></i>
+        </div>
+    </div>
+
+    <div class="config">
+        <form id="configForm">
+            <div class="pomodoroTime flex">
+                <label for="pomodoroInput">Pomodoro</label>
+                <input type="number" min="1" max="60" name="pomodoro" id="pomodoroInput"> 
+            </div>
+            <div class="shortBreakTime flex">
+                <label for="shortBreakInput">Short Break</label>
+                <input type="number" min="1" max="60" name="shortBreak" id="shortBreakInput">
+            </div>
+            <div class="longBreakTime flex">
+                <label for="longBreakInput">Long Break</label>
+                <input type="number" min="1" max="60" name="longBreak" id="longBreakInput">
+            </div>
+            <div class="cicles flex">
+                <label for="ciclesInput">Ciclos</label>
+                <input type="number" min="1" max="10" name="cicles" id="ciclesInput">
+            </div>
+
+
+            <div class="submitButton flex">
+                <button type="submit">Salvar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="../javaScript/scriptConfig.js"></script>
+</body>
+</html>

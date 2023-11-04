@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/tomate.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header flex">
+        <div class="logo flex">
+            <img src="../assets/tomate.png" alt="logo" width="45px">
+            <h1>Pomodoro</h1>
+        </div>
+
+        <div class="option">
+            <i class='bx bx-list-ul'></i>
+            <i class='bx bx-plus'></i>
+            <i class='bx bx-cog'></i>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="types flex">
+            <p class="typeActive typesP pt">Pomodoro</p>
+            <p class="typesP st">Short Break</p>
+            <p class="typesP lt">Long break</p>
+        </div>
+        
+        <div class="timer flex">
+            <h1 class="timerDisplay"></h1>
+        </div>
+
+        <div class="buttons flex">
+            <button class="start">Iniciar</button>
+            <button class="stop">Parar</button>
+        </div>
+    </div>
+
+    <div class="status flex">
+        <div class="statusCicles flex">
+            <h4 class="statusPt1">Pomodoros até Long Break: </h4>
+            <h4 class="statusPt1"><span id="spanpt1">2</span>/<span id="spanpt2"></span></h4>
+        </div>
+
+        <select name="" id="seletorTarefas">
+            <option value="">Selecione uma tarefa</option>
+        </select>
+
+        <div class="statusTask">
+            <h2 class="taskTitle">Nome da Tarefa</h2>
+            <div class="pomodoroTask flex">
+                <p>Pomodoros:<p>
+                <p><span class="span2pt1">0</span>/<span class="span2pt2">0</span><p>
+            </div>
+            <p class="taskDescription">Descrição da tarefa</p>
+        </div>
+    </div>
+    <script src="javaScript/script.js"></script>
+</body>
+</html>

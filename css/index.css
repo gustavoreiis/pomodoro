@@ -1,0 +1,102 @@
+.timer, .buttons {
+    justify-content: center;
+}
+
+.types {
+    justify-content: space-evenly;
+}
+
+.typesP {
+    background-color: var(--vermelho-escuro);
+    color: var(--branco);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.timerDisplay {
+    font-size: 70px;
+    letter-spacing: 10px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.typeActive {
+    background-color: #91032b !important;
+}
+
+.colon {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.start, .stop {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 15px;
+    margin: 10px;
+    border: none;
+    color: var(--branco);
+    background-color: var(--roxo);
+    width: 5em;
+    height: 5em;
+    border-radius: 2.5em;
+}
+
+.container, .status {
+    background-color: var(--branco);
+    width: 85%;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+
+.status {
+    flex-direction: column;
+    align-items: center;
+}
+
+.statusTask {
+    background-color: var(--roxo);
+    width: 90%;
+    border-radius: 10px;
+    color: var(--branco);
+    padding: 0 10px;
+}
+
+.taskDescription {
+    text-align: center;
+}
+
+.pomodoroTask p:first-child {
+    margin-right: 20px;
+}
+
+.pomodoroTask p {
+    margin-top: 5px;
+}
+
+.status h2 {
+    margin-bottom: 5px;
+}
+
+.status h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.statusPt1 {
+    margin-right: 10px;
+}
+
+.statusPt2 {
+    margin-left: 10px;
+}
+
+#seletorTarefas  {
+    outline: none;
+    background-color: var(--vermelho-escuro);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: var(--branco);
+    font-family: 'Signika Negative', sans-serif;
+    border: 2px solid var(--vermelho-claro);
+}

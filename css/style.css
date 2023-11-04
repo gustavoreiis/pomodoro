@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+:root {
+    --roxo: #141E46;
+    --vermelho-escuro: #C70039;
+    --vermelho-claro: #FF6969;
+    --branco: #FFF5E0;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: var(--vermelho-claro);
+}
+
+.header {
+    background-color: var(--roxo);
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    font-size: 14px;
+    color: var(--branco);
+    min-height: 45px;
+}
+
+.header i {
+    font-size: 35px;
+    margin: 0 10px;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.header i:hover {
+    color: var(--vermelho-claro)
+}
+
+.logo {
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (orientation: landscape) {
+    .status {
+        display: none;
+    }
+
+    .container {
+        height: 70%;
+    }
+}

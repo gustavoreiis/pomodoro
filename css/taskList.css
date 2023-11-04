@@ -1,0 +1,33 @@
+.card {
+    background-color: var(--branco);
+    width: 85%;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+
+.card h1 {
+    margin: 0;
+    color: var(--roxo);
+}
+
+.card p {
+    font-size: 20px;    
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons button {
+    font-family: 'Signika Negative', sans-serif;
+    outline: none;
+    background-color: var(--vermelho-escuro);
+    color: var(--branco);
+    border: 2px solid var(--vermelho-claro);
+    border-radius: 5px;
+    font-size: 20px;
+    width: 4.5rem;
+    height: 2.5rem;
+}

@@ -1,0 +1,65 @@
+.formsDiv {
+    background-color: var(--branco);
+    width: 85%;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 20px 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formsDiv h1 {
+    color: var(--roxo);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formsDiv input {
+    width: 15em;
+    height: 2.5em;
+    font-size: 20px;
+    border: 3px solid var(--vermelho-escuro);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--roxo);
+    margin-bottom: 10px;
+}
+
+.divCiclos {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divCiclos label {
+    font-size: 25px;
+    color: var(--roxo);
+}
+
+#ciclos {
+    width: 3em;
+    min-height: 3em;
+    font-size: 20px;
+    border: 3px solid var(--vermelho-escuro);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--roxo);
+}
+
+.taskButton {
+    justify-content: center;
+}
+
+button {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 15px;
+    margin: 10px;
+    border: none;
+    color: var(--branco);
+    background-color: var(--roxo);
+    width: 5em;
+    height: 5em;
+    border-radius: 2.5em;
+}

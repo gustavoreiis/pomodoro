@@ -1,0 +1,54 @@
+.config {
+    background-color: var(--branco);
+    width: 85%;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+
+.config * {
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.config label {
+    font-size: 30px;
+}
+
+.config input {
+    width: 3em;
+    min-height: 3em;
+    font-size: 20px;
+    border: 3px solid var(--vermelho-escuro);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--roxo);
+}
+
+.config input:focus {
+    outline: none;
+    background-color: var(--vermelho-claro);
+    color: var(--branco);
+    transition: background-color, color 0.2s ease;
+}
+
+.submitButton {
+    justify-content: center;
+}
+
+.submitButton button:active {
+    background-color: var(--vermelho-escuro);
+}
+
+.submitButton button {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 15px;
+    margin: 10px;
+    border: none;
+    color: var(--branco);
+    background-color: var(--roxo);
+    width: 5em;
+    height: 5em;
+    border-radius: 2.5em;
+}
