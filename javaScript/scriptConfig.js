@@ -39,6 +39,6 @@ document.getElementById('configForm').addEventListener('submit', function(event)
         localStorage.setItem('timeLongBreakInput', timeLongBreakInput);
         localStorage.setItem('numCiclesInput', numCiclesInput);
         alert('Dados salvos com sucesso.');
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
     }
 });
