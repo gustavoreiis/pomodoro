@@ -13,6 +13,13 @@ list.addEventListener('click', function() {
     window.location.href = "taskList.html";
 })
 
+//-----------------------------------
+const user = document.querySelector('.bx-user');
+user.addEventListener('click', function() {
+    window.location.href = "puzzle.html";
+})
+//-----------------------------------
+
 const pomodoroInput = document.getElementById('pomodoroInput');
 const shortBreakInput = document.getElementById('shortBreakInput');
 const longBreakInput = document.getElementById('longBreakInput');

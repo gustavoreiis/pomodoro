@@ -13,6 +13,13 @@ list.addEventListener('click', function() {
     window.location.href = "tasks.html";
 })
 
+//-------------------------------------
+const user = document.querySelector('.bx-user');
+user.addEventListener('click', function() {
+    window.location.href = "puzzle.html";
+})
+//--------------------------------------
+
 const container = document.querySelector('.containerCard');
 
 function criarCards() {

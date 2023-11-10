@@ -25,13 +25,13 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 10%;
-    font-size: 14px;
+    font-size: 9px;
     color: var(--branco);
     min-height: 45px;
 }
 
 .header i {
-    font-size: 35px;
+    font-size: 25px;
     margin: 0 10px;
     color: var(--branco);
     cursor: pointer;

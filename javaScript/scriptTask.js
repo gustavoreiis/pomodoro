@@ -13,6 +13,13 @@ list.addEventListener('click', function() {
     window.location.href = "taskList.html";
 })
 
+//-----------------------------------
+const user = document.querySelector('.bx-user');
+user.addEventListener('click', function() {
+    window.location.href = "puzzle.html";
+})
+//----------------------------------
+
 const nomeInput = document.getElementById('nome');
 const descricaoInput = document.getElementById('descricao')
 const ciclosInput = document.getElementById('ciclos');

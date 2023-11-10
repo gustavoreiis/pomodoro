@@ -13,6 +13,11 @@ list.addEventListener('click', function() {
     window.location.href = "html/taskList.html";
 })
 
+const user = document.querySelector('.bx-user');
+user.addEventListener('click', function() {
+    window.location.href = "html/puzzle.html";
+})
+
 if (localStorage.getItem('timePomodoroInput') == null) {
     localStorage.setItem('timePomodoroInput', 25);
 }
@@ -142,3 +147,6 @@ function atualizarSeletor() {
 
 preencherSeletor();
 seletorTarefas.addEventListener('change', atualizarSeletor);
+
+
+
