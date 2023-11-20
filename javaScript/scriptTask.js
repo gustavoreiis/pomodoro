@@ -11,14 +11,7 @@ config.addEventListener("click", function() {
 const list = document.querySelector('.bx-list-ul');
 list.addEventListener('click', function() {
     window.location.href = "taskList.html";
-})
-
-//-----------------------------------
-const user = document.querySelector('.bx-user');
-user.addEventListener('click', function() {
-    window.location.href = "puzzle.html";
-})
-//----------------------------------
+});
 
 const nomeInput = document.getElementById('nome');
 const descricaoInput = document.getElementById('descricao')
