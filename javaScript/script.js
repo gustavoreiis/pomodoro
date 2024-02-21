@@ -66,6 +66,7 @@ function IniciarTimer() {
             if (current === "work") {
                 pomodoros++;
                 cicloAtual++;
+                verificarTarefaSelecionada();
                 if (pomodoros < localStorage.getItem('numCiclesInput')) {
                     document.querySelector('.pt').classList.remove('typeActive');
                     document.querySelector('.st').classList.add('typeActive');
@@ -91,7 +92,7 @@ function IniciarTimer() {
 
             atualizarTimer(workTime)
         }
-    }, 10);
+    }, 1000);
 
 }
 
@@ -125,11 +126,14 @@ function atualizarSeletor() {
     const ciclosTarefa = document.querySelector('.span2pt2');
     const descricaoTarefa = document.querySelector('.taskDescription');
     const selectedIndex = seletorTarefas.value;
+    const currentCicle = document.querySelector('.span2pt1');
 
     if (selectedIndex !== "") {
         const tarefas = JSON.parse(localStorage.getItem('tasks')) || [];
         const tarefaSelecionada = tarefas[selectedIndex];
         tituloTarefa.innerHTML = tarefaSelecionada.name;
+        console.log(tarefaSelecionada.current);
+        currentCicle.innerHTML = tarefaSelecionada.current;
         ciclosTarefa.innerHTML = tarefaSelecionada.cicles;
         descricaoTarefa.innerHTML = tarefaSelecionada.description;
     } else {
@@ -137,6 +141,22 @@ function atualizarSeletor() {
         ciclosTarefa.innerHTML = "0";
         descricaoTarefa.innerHTML = "Descrição da tarefa";
     }
+}
+
+function verificarTarefaSelecionada() {
+    const selectedIndex = seletorTarefas.value;
+    if (selectedIndex !== "") {
+        const tarefas = JSON.parse(localStorage.getItem('tasks')) || [];
+        const tarefa = tarefas[selectedIndex];
+        if (tarefa.current < tarefa.cicles) {
+            tarefa.current += 1;
+            if (tarefa.current == tarefa.cicles) {
+                tarefa.concluded = true;
+            }
+        }
+        localStorage.setItem('tasks', JSON.stringify(tarefas));
+    }
+    atualizarSeletor();
 }
 
 
