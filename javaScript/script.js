@@ -97,7 +97,7 @@ function IniciarTimer() {
 
             atualizarTimer(workTime)
         }
-    }, 1);
+    }, 1000);
 
 }
 
