@@ -52,7 +52,9 @@ function atualizarTimer(tempo) {
 
 function IniciarTimer() {
     startButton.disabled = true;
+    startButton.classList.add('selected');
     stopButton.disabled = false;
+    stopButton.classList.remove('selected');
 
     timer = setInterval(function() {
         workTime--;
@@ -73,9 +75,11 @@ function IniciarTimer() {
                     document.querySelector('.lt').classList.remove('typeActive');
                     current = "shortBreak";
                     workTime = shortBreakTime;
+                    startButton.classList.remove('selected');
                 } else {
                     current = "longBreak";
                     workTime = longBreakTime;
+                    startButton.classList.remove('selected');
                     pomodoros = 0;
                     cicloAtual = 0;
                     document.querySelector('.pt').classList.remove('typeActive');
@@ -83,6 +87,7 @@ function IniciarTimer() {
                     document.querySelector('.lt').classList.add('typeActive');
                 }
             } else {
+                startButton.classList.remove('selected');
                 current = "work";
                 document.querySelector('.pt').classList.add('typeActive');
                 document.querySelector('.st').classList.remove('typeActive');
@@ -92,7 +97,7 @@ function IniciarTimer() {
 
             atualizarTimer(workTime)
         }
-    }, 1000);
+    }, 1);
 
 }
 
@@ -100,6 +105,8 @@ function pararTimer() {
     clearInterval(timer);
     startButton.disabled = false;
     stopButton.disabled = true;
+    startButton.classList.remove('selected');
+    stopButton.classList.add('selected');
 }
 
 startButton.addEventListener("click", IniciarTimer);

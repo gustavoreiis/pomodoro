@@ -59,12 +59,3 @@ body {
 
 
 
-@media (orientation: landscape) {
-    .status {
-        display: none;
-    }
-
-    .container {
-        height: 70%;
-    }
-}

@@ -64,6 +64,7 @@
 
 .taskDescription {
     text-align: center;
+    word-wrap: break-word;
 }
 
 .pomodoroTask p:first-child {
@@ -99,4 +100,29 @@
     color: var(--branco);
     font-family: 'Signika Negative', sans-serif;
     border: 2px solid var(--vermelho-claro);
+}
+
+.selected {
+    background-color: var(--vermelho-claro);
+}
+
+@media (orientation: landscape) {
+    .container, .status {
+        width: 45%;
+        margin-bottom: 0;
+    }
+
+    .container .timerDisplay {
+        margin: 0;
+    }
+
+    .container {
+        padding: 0;
+        height: 50%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
 }
